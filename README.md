@@ -1,0 +1,3 @@
+# React Router Dom: URL not updating after navigating to non-existent route
+
+This repository demonstrates a bug in React Router Dom v6 where the URL in the browser address bar does not update to reflect a 404 error or a catch-all route such as '*' when navigating to a non-existent route.  The 'Not Found' component is rendered correctly. However the URL remains at the previous URL instead of updating.  The solution provided demonstrates a fix using the `useLocation` hook to force a redirect if the path is invalid.
